@@ -1,30 +1,38 @@
-// Interfaces
-enum Color {
-  Rojo = 'Rojo',
-  Verde = 'Verde',
-}
+// // Interfaces
+// enum Color {
+//   Rojo = 'Rojo',
+//   Verde = 'Verde',
+// }
 
-interface Rectangulo {
-  ancho: number;
-  alto: number;
-  color?: Color;
-}
+// interface Rectangulo {
+//   ancho: number;
+//   alto: number;
+//   color?: Color;
+// }
 
-let rect: Rectangulo = {
-  ancho: 4,
-  alto: 6,
-  // color: Color.Rojo,
+// let rect: Rectangulo = {
+//   ancho: 4,
+//   alto: 6,
+//   // color: Color.Rojo,
+// };
+
+// function area(r: Rectangulo): number {
+//   return r.alto * r.ancho;
+// }
+
+// const areaRect = area(rect);
+// console.log(areaRect);
+
+// rect.toString = function() {
+//   return this.color ? `Un rectangulo ${this.color}` : `Un rectangulo`;
+// };
+
+// console.log(rect.toString());
+
+console.log('ello type');
+
+function add( a:number, b:number) {
+  return a+b
 };
 
-function area(r: Rectangulo): number {
-  return r.alto * r.ancho;
-}
-
-const areaRect = area(rect);
-console.log(areaRect);
-
-rect.toString = function() {
-  return this.color ? `Un rectangulo ${this.color}` : `Un rectangulo`;
-};
-
-console.log(rect.toString());
+add(8,5)
